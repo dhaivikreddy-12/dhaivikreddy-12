@@ -8,17 +8,17 @@ I build machine learning systems that start small, get measured honestly, and en
 
 ## About
 
-My first line of ML code was a linear regression on house prices, and I remember being genuinely surprised that a straight line could explain 90% of the variance in something as messy as real estate.
+My first line of ML code was a linear regression on house prices, and I remember being surprised that a straight line could explain most of the variation in something as messy as real estate.
 
-That curiosity turned into a habit: pick a problem, build the simplest thing that works, then measure how badly it fails. Most of what I've learned came from step two — when the model hit 0.62 AUC and I had to figure out *why* rather than swap in something bigger.
+Then I made the same project with invented numbers and got an R² of 0.90 — and it felt hollow. Switching to the real California Housing dataset dropped it to 0.81 and taught me more in an afternoon than months of tutorials. Every project here runs on real public data now, measured honestly, including the parts where the result isn't flattering.
 
-I'm not trying to pretend I'm an expert. I'm a student who builds things, reads the documentation, breaks them, fixes them, and writes down what happened. Every repo here runs end-to-end on a laptop, and every metric quoted is one I actually measured.
+I'm a student who builds things, breaks them, reads the error, and writes down what happened. Every metric in every repo is one I actually measured by running the code.
 
 ---
 
 ## What I'm working on
 
-- **Deep learning** — CNNs, LSTMs, and now transfer learning
+- **Deep learning** — CNNs and LSTMs, working toward transfer learning
 - **ML engineering** — packaging models, serving them behind APIs, reproducible experiments
 - **Statistics literacy** — knowing what a metric means before trusting it
 - **Clean code** — because a model nobody else can run isn't finished
@@ -28,49 +28,49 @@ I'm not trying to pretend I'm an expert. I'm a student who builds things, reads 
 ## Stack
 
 ```
-Python · pandas · NumPy · scikit-learn · PyTorch
-Matplotlib · Seaborn · XGBoost · imbalanced-learn
-Git · Linux · Jupyter · Docker
+Python · pandas · NumPy · scikit-learn · PyTorch · XGBoost
+Matplotlib · Seaborn · imbalanced-learn · torchvision
+Git · Linux · Jupyter · Docker · pytest
 ```
 
 ---
 
 ## Projects
 
-Ten projects, organised into the three stages I actually worked through. The level isn't marketing — it's roughly the order I'd tackle them in if I were starting again.
+Ten projects across the three stages I actually worked through. The levels aren't marketing — they're roughly the order I'd tackle them in if I started again.
+
+Every repo runs on **real public data**, downloads it automatically on first run, and includes a LICENSE, tests, and a CI workflow.
 
 ### Level 1 — Foundations
 
 Getting comfortable with the core loop: load data, split it, fit a model, read the metrics.
 
-| Project | Problem it solves | Concept it taught me |
+| Project | Dataset | Concept it taught me |
 |---|---|---|
-| [House Price Prediction](https://github.com/dhaivikreddy-12/house-price-prediction) | Estimate a home's value from size, rooms, and age | Regression, R² vs RMSE, why you always need a test set |
-| [Iris Classifier](https://github.com/dhaivikreddy-12/iris-classifier) | Sort a flower into one of three species | KNN vs logistic regression, reading a confusion matrix |
-| [Student Marks Predictor](https://github.com/dhaivikreddy-12/student-marks-predictor) | Predict exam scores from study habits | Random forests, feature importance as a story |
+| [House Price Prediction](https://github.com/dhaivikreddy-12/house-price-prediction) | California Housing, 20,640 real homes | Regression, R² vs RMSE, comparing three models fairly |
+| [Iris Classifier](https://github.com/dhaivikreddy-12/iris-classifier) | Fisher's Iris, 150 samples | KNN vs logistic regression, reading a confusion matrix |
+| [Diabetes Progression Predictor](https://github.com/dhaivikreddy-12/diabetes-progression-predictor) | Diabetes, 442 real patients | Random forests, feature importance as a story |
 
 ### Level 2 — Real-world problems
 
-Where the data fights back: imbalance, messy categories, and metrics that matter more than accuracy.
+Where the data fights back: imbalance, missing values, and metrics that matter more than accuracy.
 
-| Project | Problem it solves | Concept it taught me |
+| Project | Dataset | Concept it taught me |
 |---|---|---|
-| [Customer Churn Prediction](https://github.com/dhaivikreddy-12/customer-churn-prediction) | Find subscribers about to cancel | Why accuracy lies on imbalanced data; AUC |
-| [Credit Card Fraud Detection](https://github.com/dhaivikreddy-12/credit-card-fraud-detection) | Flag fraud in 20,000 transactions | SMOTE, precision/recall trade-offs, threshold tuning |
-| [Spam Message Classifier](https://github.com/dhaivikreddy-12/spam-message-classifier) | Separate spam from genuine messages | TF-IDF, text preprocessing, why Naive Bayes still wins |
-| [Heart Disease Risk Prediction](https://github.com/dhaivikreddy-12/heart-disease-risk-prediction) | Screen patients for cardiovascular risk | Cross-validation, and the ethics of medical-adjacent models |
+| [Customer Churn Prediction](https://github.com/dhaivikreddy-12/customer-churn-prediction) | Telco Churn, 7,043 subscribers | Why accuracy lies on imbalanced data; a text column that needs coercing |
+| [Credit Card Fraud Detection](https://github.com/dhaivikreddy-12/credit-card-fraud-detection) | Credit Card Fraud, 284,807 transactions (0.17% fraud) | SMOTE, average precision vs ROC-AUC, threshold tuning |
+| [Spam Message Classifier](https://github.com/dhaivikreddy-12/spam-message-classifier) | UCI SMS Spam, 5,572 real messages | TF-IDF, text preprocessing, why Naive Bayes still wins |
+| [Heart Disease Risk Prediction](https://github.com/dhaivikreddy-12/heart-disease-risk-prediction) | UCI Cleveland, 303 patients | Cross-validation, imputing real missing values, medical ML ethics |
 
 ### Level 3 — Deep learning
 
 Moving past hand-engineered features into representation learning.
 
-| Project | Problem it solves | Concept it taught me |
+| Project | Dataset | Concept it taught me |
 |---|---|---|
-| [Image Classification CNN](https://github.com/dhaivikreddy-12/image-classification-cnn) | Recognise shapes from raw pixels | Convolutions, the training loop, PyTorch |
-| [Stock Price Forecasting LSTM](https://github.com/dhaivikreddy-12/stock-price-forecasting-lstm) | Forecast a price series from its history | Why sequence models exist, and where they still fail |
-| [Movie Recommender System](https://github.com/dhaivikreddy-12/movie-recommender-system) | Suggest films from rating behaviour alone | Matrix factorization, latent features, collaborative filtering |
-
-Every repo is self-contained — synthetic datasets are generated on first run, so `pip install -r requirements.txt` then the entry-point script is genuinely all you need. No download walls, no missing data.
+| [Image Classification CNN](https://github.com/dhaivikreddy-12/image-classification-cnn) | MNIST, 70,000 real handwritten digits | Convolutions, batch norm, LR schedules, validation splits |
+| [Stock Price Forecasting LSTM](https://github.com/dhaivikreddy-12/stock-price-forecasting-lstm) | Real AAPL daily prices, 1,255 sessions | Sequence models, normalisation, where LSTMs still fail |
+| [Movie Recommender System](https://github.com/dhaivikreddy-12/movie-recommender-system) | MovieLens, 100,836 real ratings | Matrix factorization, early stopping, honest baselines |
 
 ---
 
@@ -78,10 +78,11 @@ Every repo is self-contained — synthetic datasets are generated on first run, 
 
 A few things I've settled into while building these:
 
+- **Real data or nothing.** Synthetic data teaches the syntax of a pipeline and nothing about the data. Every project here downloads a genuine public dataset.
 - **Baseline first.** Most of the time the answer is logistic regression, not a transformer.
-- **One metric isn't enough.** If I can't state the business cost of a false positive, I don't understand the problem yet.
-- **Synthetic data is a teaching tool.** It lets the whole pipeline run offline, which means more people can actually learn from it.
-- **Write the honest result.** A model that scores 1.1 RMSE and says so is more useful than one that hides the number.
+- **Compare against an honest baseline.** Using the test-set mean to score a model flatters it — I did exactly that in the recommender and had to redo it.
+- **Impute inside the pipeline.** Never before the split. The Cleveland dataset has real missing values, which is the point.
+- **Report the unflattering number too.** The recommender was worse than baseline until I added early stopping. That debugging story is more useful than the final score.
 
 ---
 
