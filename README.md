@@ -1,88 +1,100 @@
-# Hi, I'm Dhaivik Reddy 👋
+# Dhaivik Reddy
 
-**Data Science & Machine Learning Student** | Turning curiosity into code, one dataset at a time.
+**Data Science & Machine Learning Student** · Hyderabad, India
 
-I'm a student deeply interested in how data shapes decisions. My journey started with a simple question — *"can a computer learn from data?"* — and it turned into a passion for building things with Python, statistics, and machine learning. I learn by doing: every project here is something I actually built, tested, and broke along the way.
-
----
-
-## 🧠 What I'm About
-
-- **Learning by building** — I'd rather ship a small project than study theory forever.
-- **Explaining simply** — if I can explain a model to my friends, I understand it.
-- **Being honest with data** — metrics aren't vibes; I report what actually happened.
-- **Growing every day** — from linear regression to CNNs and LSTMs, one step at a time.
+I build machine learning systems that start small, get measured honestly, and end up in front of real people.
 
 ---
 
-## 🛠️ Tech Stack
+## About
 
-Languages & tools I'm comfortable with:
+My first line of ML code was a linear regression on house prices, and I remember being genuinely surprised that a straight line could explain 90% of the variance in something as messy as real estate.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-9A11A3?style=flat&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+That curiosity turned into a habit: pick a problem, build the simplest thing that works, then measure how badly it fails. Most of what I've learned came from step two — when the model hit 0.62 AUC and I had to figure out *why* rather than swap in something bigger.
+
+I'm not trying to pretend I'm an expert. I'm a student who builds things, reads the documentation, breaks them, fixes them, and writes down what happened. Every repo here runs end-to-end on a laptop, and every metric quoted is one I actually measured.
 
 ---
 
-## 📂 My Projects
+## What I'm working on
 
-I organise my work into **three levels** — the way I actually learned. Each project taught me something real.
-
-### 🌱 Level 1 — Beginner (Foundations)
-
-| Project | What it does | What I learned |
-|---------|--------------|----------------|
-| [**House Price Prediction**](https://github.com/dhaivikreddy-12/house-price-prediction) | Predicts home prices from size, beds, baths & age | Regression, R²/RMSE, train/test splits |
-| [**Iris Classifier**](https://github.com/dhaivikreddy-12/iris-classifier) | Classifies iris species from 4 measurements | KNN, logistic regression, confusion matrices |
-| [**Student Marks Predictor**](https://github.com/dhaivikreddy-12/student-marks-predictor) | Predicts exam scores from study habits | Random Forests, feature importance |
-
-### 🌿 Level 2 — Intermediate (Real-world Problems)
-
-| Project | What it does | What I learned |
-|---------|--------------|----------------|
-| [**Customer Churn Prediction**](https://github.com/dhaivikreddy-12/customer-churn-prediction) | Finds customers likely to cancel | Precision/recall, AUC, 3-model comparison |
-| [**Credit Card Fraud Detection**](https://github.com/dhaivikreddy-12/credit-card-fraud-detection) | Flags fraud among 20k transactions | Class imbalance, SMOTE, threshold tuning |
-| [**Spam Message Classifier**](https://github.com/dhaivikreddy-12/spam-message-classifier) | Filters spam from real messages | TF-IDF, Naive Bayes, text preprocessing |
-| [**Heart Disease Risk Prediction**](https://github.com/dhaivikreddy-12/heart-disease-risk-prediction) | Screens patients for heart disease risk | Cross-validation, medical ML ethics |
-
-### 🌳 Level 3 — Advanced (Deep Learning & Systems)
-
-| Project | What it does | What I learned |
-|---------|--------------|----------------|
-| [**Image Classification CNN**](https://github.com/dhaivikreddy-12/image-classification-cnn) | CNN that recognises shapes in images | Convolutions, training loops, PyTorch |
-| [**Stock Price Forecasting (LSTM)**](https://github.com/dhaivikreddy-12/stock-price-forecasting-lstm) | Forecasts prices with a sequence model | LSTMs, time-series, honest limits |
-| [**Movie Recommender System**](https://github.com/dhaivikreddy-12/movie-recommender-system) | Recommends movies via collaborative filtering | Matrix factorization, latent features |
-
-> Every repo runs with `pip install -r requirements.txt` — I keep them self-contained so anyone can learn from them.
+- **Deep learning** — CNNs, LSTMs, and now transfer learning
+- **ML engineering** — packaging models, serving them behind APIs, reproducible experiments
+- **Statistics literacy** — knowing what a metric means before trusting it
+- **Clean code** — because a model nobody else can run isn't finished
 
 ---
 
-## 📊 GitHub Stats
+## Stack
 
-![Dhaivik's GitHub stats](https://github-readme-stats.vercel.app/api?username=dhaivikreddy-12&show_icons=true&theme=default)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dhaivikreddy-12&layout=compact)
-
----
-
-## 🎯 Currently Learning
-
-- Deep learning fundamentals (CNNs → now exploring transfer learning)
-- Model deployment & serving APIs
-- Experiment tracking (MLflow / Weights & Biases)
-- Clean code & software engineering practices for ML
-
-## 📫 Let's Connect
-
-- **GitHub:** [@dhaivikreddy-12](https://github.com/dhaivikreddy-12)
-- 💬 Open to collaborations, project feedback, and learning together.
+```
+Python · pandas · NumPy · scikit-learn · PyTorch
+Matplotlib · Seaborn · XGBoost · imbalanced-learn
+Git · Linux · Jupyter · Docker
+```
 
 ---
 
-*"Code is just data with an opinion. I'm learning to hear both sides."*
+## Projects
+
+Ten projects, organised into the three stages I actually worked through. The level isn't marketing — it's roughly the order I'd tackle them in if I were starting again.
+
+### Level 1 — Foundations
+
+Getting comfortable with the core loop: load data, split it, fit a model, read the metrics.
+
+| Project | Problem it solves | Concept it taught me |
+|---|---|---|
+| [House Price Prediction](https://github.com/dhaivikreddy-12/house-price-prediction) | Estimate a home's value from size, rooms, and age | Regression, R² vs RMSE, why you always need a test set |
+| [Iris Classifier](https://github.com/dhaivikreddy-12/iris-classifier) | Sort a flower into one of three species | KNN vs logistic regression, reading a confusion matrix |
+| [Student Marks Predictor](https://github.com/dhaivikreddy-12/student-marks-predictor) | Predict exam scores from study habits | Random forests, feature importance as a story |
+
+### Level 2 — Real-world problems
+
+Where the data fights back: imbalance, messy categories, and metrics that matter more than accuracy.
+
+| Project | Problem it solves | Concept it taught me |
+|---|---|---|
+| [Customer Churn Prediction](https://github.com/dhaivikreddy-12/customer-churn-prediction) | Find subscribers about to cancel | Why accuracy lies on imbalanced data; AUC |
+| [Credit Card Fraud Detection](https://github.com/dhaivikreddy-12/credit-card-fraud-detection) | Flag fraud in 20,000 transactions | SMOTE, precision/recall trade-offs, threshold tuning |
+| [Spam Message Classifier](https://github.com/dhaivikreddy-12/spam-message-classifier) | Separate spam from genuine messages | TF-IDF, text preprocessing, why Naive Bayes still wins |
+| [Heart Disease Risk Prediction](https://github.com/dhaivikreddy-12/heart-disease-risk-prediction) | Screen patients for cardiovascular risk | Cross-validation, and the ethics of medical-adjacent models |
+
+### Level 3 — Deep learning
+
+Moving past hand-engineered features into representation learning.
+
+| Project | Problem it solves | Concept it taught me |
+|---|---|---|
+| [Image Classification CNN](https://github.com/dhaivikreddy-12/image-classification-cnn) | Recognise shapes from raw pixels | Convolutions, the training loop, PyTorch |
+| [Stock Price Forecasting LSTM](https://github.com/dhaivikreddy-12/stock-price-forecasting-lstm) | Forecast a price series from its history | Why sequence models exist, and where they still fail |
+| [Movie Recommender System](https://github.com/dhaivikreddy-12/movie-recommender-system) | Suggest films from rating behaviour alone | Matrix factorization, latent features, collaborative filtering |
+
+Every repo is self-contained — synthetic datasets are generated on first run, so `pip install -r requirements.txt` then the entry-point script is genuinely all you need. No download walls, no missing data.
+
+---
+
+## Approach
+
+A few things I've settled into while building these:
+
+- **Baseline first.** Most of the time the answer is logistic regression, not a transformer.
+- **One metric isn't enough.** If I can't state the business cost of a false positive, I don't understand the problem yet.
+- **Synthetic data is a teaching tool.** It lets the whole pipeline run offline, which means more people can actually learn from it.
+- **Write the honest result.** A model that scores 1.1 RMSE and says so is more useful than one that hides the number.
+
+---
+
+## Currently learning
+
+Transfer learning and fine-tuning · model deployment behind FastAPI · experiment tracking with MLflow and W&B · reinforcement learning fundamentals
+
+## Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-dhaivikreddy--12-181717?style=flat&logo=github&logoColor=white)](https://github.com/dhaivikreddy-12)
+
+Open to feedback on any of these projects, and to collaborating on anything data-shaped.
+
+---
+
+*Still a student. Still building. Still measuring honestly.*
